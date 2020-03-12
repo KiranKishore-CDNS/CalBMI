@@ -56,15 +56,47 @@
 		9981A741241A11ED00ACC113 /* CalBMI */ = {
 			isa = PBXGroup;
 			children = (
-				9981A742241A11ED00ACC113 /* AppDelegate.swift */,
-				9981A744241A11ED00ACC113 /* SceneDelegate.swift */,
-				9981A746241A11ED00ACC113 /* ViewController.swift */,
-				9981A748241A11ED00ACC113 /* Main.storyboard */,
+				9981A759241A121700ACC113 /* View */,
+				9981A758241A121000ACC113 /* Controller */,
+				9981A757241A120B00ACC113 /* Model */,
+				9981A756241A11FA00ACC113 /* Supporting Files */,
+			);
+			path = CalBMI;
+			sourceTree = "<group>";
+		};
+		9981A756241A11FA00ACC113 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				9981A74B241A11F000ACC113 /* Assets.xcassets */,
 				9981A74D241A11F000ACC113 /* LaunchScreen.storyboard */,
 				9981A750241A11F000ACC113 /* Info.plist */,
 			);
-			path = CalBMI;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9981A757241A120B00ACC113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9981A758241A121000ACC113 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9981A742241A11ED00ACC113 /* AppDelegate.swift */,
+				9981A744241A11ED00ACC113 /* SceneDelegate.swift */,
+				9981A746241A11ED00ACC113 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9981A759241A121700ACC113 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9981A748241A11ED00ACC113 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NB9YQ3YWG;
-				INFOPLIST_FILE = CalBMI/Info.plist;
+				INFOPLIST_FILE = "CalBMI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5NB9YQ3YWG;
-				INFOPLIST_FILE = CalBMI/Info.plist;
+				INFOPLIST_FILE = "CalBMI/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
