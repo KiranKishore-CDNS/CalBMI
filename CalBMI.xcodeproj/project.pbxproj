@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9911A0D8241A275200514624 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9911A0D7241A275200514624 /* BMIViewController.swift */; };
 		9981A743241A11ED00ACC113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981A742241A11ED00ACC113 /* AppDelegate.swift */; };
 		9981A745241A11ED00ACC113 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981A744241A11ED00ACC113 /* SceneDelegate.swift */; };
 		9981A747241A11ED00ACC113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9981A746241A11ED00ACC113 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9911A0D7241A275200514624 /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 		9981A73F241A11ED00ACC113 /* CalBMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalBMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9981A742241A11ED00ACC113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9981A744241A11ED00ACC113 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				9981A742241A11ED00ACC113 /* AppDelegate.swift */,
 				9981A744241A11ED00ACC113 /* SceneDelegate.swift */,
 				9981A746241A11ED00ACC113 /* ViewController.swift */,
+				9911A0D7241A275200514624 /* BMIViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9981A747241A11ED00ACC113 /* ViewController.swift in Sources */,
+				9911A0D8241A275200514624 /* BMIViewController.swift in Sources */,
 				9981A743241A11ED00ACC113 /* AppDelegate.swift in Sources */,
 				9981A745241A11ED00ACC113 /* SceneDelegate.swift in Sources */,
 			);
