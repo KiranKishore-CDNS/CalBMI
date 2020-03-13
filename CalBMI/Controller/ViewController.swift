@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var bmi : Float = 0.0
+    var bmi : Float?
     var weight : Float = 0.0
     var height : Float = 0.0
     
@@ -33,12 +33,12 @@ class ViewController: UIViewController {
     
     @IBAction func heightValueChanged(_ sender: UISlider) {
         height = sender.value
-        userHeight.text = String(format: "%.2f", sender.value)
+        userHeight.text = String(format: "%.2f", sender.value) + " m"
     }
     
     @IBAction func weightValueChanged(_ sender: UISlider) {
         weight = sender.value
-        userWeight.text = String(format: "%.2f", sender.value)
+        userWeight.text = String(format: "%.2f", sender.value) + " kg"
     }
     
     @IBAction func calButtonTapped(_ sender: UIButton) {
@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     func findBMI(){
         
         
-        var bmi = weight/(height * height)
-        print(bmi)
+        bmi = weight/(height * height)
+        print("BMI is :\(bmi ?? 0.0)")
         performSegue(withIdentifier: "showBMI", sender: self)
         
     }
@@ -62,7 +62,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showBMI" {
             let VC = segue.destination as! BMIViewController
-            VC.userBMI = String(format: "%.2f", bmi)
+             
+            VC.userBMI = bmi ?? 0.0
+            print(VC.userBMI
+            )
         }else{
            print("Error, wrong segue.")
         }
